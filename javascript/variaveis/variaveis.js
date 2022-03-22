@@ -20,7 +20,7 @@ const imprimir = require('../modulo/index.js');
 	variavel_let  = "um valor"
 	variavel_let = "valor alterado"; // pode ter seu valor alterado
 
-	const constante = "não muda"; // precisa ser declara já com o seu valor
+	const constante = "não muda"; // precisa ser declarada já com o seu valor
 	// constante = "se tentar alterar dá erro"; // Erro
 
 	const endereco = { rua: "uma rua", numero: 200 };
