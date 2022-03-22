@@ -8,7 +8,7 @@
 | içável       | sim            | não            | não            |
 
 */
-const imprimir = require('../modulo/index.js');
+import { imprimir, limpar } from '../modulo/index.js';
 
 {
 	// atribuição e reatribuição
@@ -40,6 +40,7 @@ const imprimir = require('../modulo/index.js');
 	imprimir(`[frutas:40] [${frutas}]`);
 }
 
+limpar();
 // variável global
 var global = "um texto global";
 
@@ -56,7 +57,6 @@ var global = "um texto global";
 
 // local é acessível em global quando declarado com var
 imprimir(`[local:58] ${local}`);
-
 {
 	// bloco 1 - Pai
 	let local_let = "uma variável let em um bloco 1";
@@ -83,7 +83,7 @@ imprimir(`[local:58] ${local}`);
 	// variável declarada com let em um bloco filho não é acessível em um bloco pai
 	// imprimir(`[local_let_2] ${local_let_2}`); // Erro
 }
-
+limpar();
 {
 	// içamento
 
@@ -104,3 +104,4 @@ imprimir(`[local:58] ${local}`);
 	imprimir(`[ultima_let:104] ${ultima_let}`);
 	imprimir(`[ultima_const:105] ${ultima_const}`);
 }
+limpar();

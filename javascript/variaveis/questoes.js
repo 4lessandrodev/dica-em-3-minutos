@@ -1,4 +1,4 @@
-const imprimir = require('../modulo/index.js');
+import { imprimir } from '../modulo/index.js';
 
 // A grande questão - variáveis
 

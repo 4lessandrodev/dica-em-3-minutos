@@ -1,0 +1,9 @@
+{
+  "name": "youtube",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:4lessandrodev/dica-em-3-minutos.git",
+  "author": "4lessandrodev <alessandroadm@live.com>",
+  "license": "MIT",
+  "type": "module"
+}

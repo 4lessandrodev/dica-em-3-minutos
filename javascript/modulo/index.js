@@ -1,3 +1,4 @@
-module.exports = function Imprimir(valor) {
-	console.log(valor);
-}
+import imprimir from './imprimir.js';
+import limpar from './limpar.js';
+
+export { imprimir, limpar };
