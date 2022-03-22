@@ -2,6 +2,41 @@ const imprimir = require('../modulo/index.js');
 
 // A grande questão - variáveis
 
+{
+	var nome;
+
+	let pedro = "Pedro";
+	const matheus = "Matheus";
+	
+	nome = matheus;
+
+	try {
+		let luana = "Luana";
+
+		pedro = luana;
+		matheus = pedro;
+		nome = matheus;
+
+	} catch (error) {
+
+		nome = pedro;
+	}
+
+	// O que será exibido no console?
+	// Matheus, Luana, ou Pedro
+	imprimir(nome);
+}
+
+// Marque sua resposta
+// A: [] Matheus
+// B: [] Luana
+// C: [] Pedro
+
+
+// -----------------------------------------------------------------
+
+// A grande questão - variáveis
+
 // escopo global
 var resultado;
 const y = 0;

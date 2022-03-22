@@ -12,29 +12,32 @@ const imprimir = require('../modulo/index.js');
 
 {
 	// atribuição e reatribuição
-	var variavel; // pode ser declarada com ou sem um valor inicial
-	variavel = "um valor inicial";
-	variavel = "um valor alterado"; // pode ter seu valor alterado
+	var variavel_var; // pode ser declarada com ou sem um valor inicial
+	variavel_var = "um valor inicial";
+	variavel_var = "um valor alterado"; // pode ter seu valor alterado
 
 	let variavel_let; // pode ser declarada com ou sem um valor inicial
 	variavel_let  = "um valor"
 	variavel_let = "valor alterado"; // pode ter seu valor alterado
 
-	const constante = "não muda"; // precisa ser declara já com o seu valor
-	// constante = "se tentar alterar dá erro"; // Erro
+	const variavel_const = "não muda"; // precisa ser declara já com o seu valor
+	// variavel_const = "se tentar alterar dá erro"; // Erro
 
 	const endereco = { rua: "uma rua", numero: 200 };
 	imprimir(`[endereco:27] ${JSON.stringify(endereco)}`);
+
 	endereco.rua = "rua alterada"; // uma constante quando objeto pode ter o valor de seu atributo alterado.
-	imprimir(`[endereco:29] ${JSON.stringify(endereco)}`);
+	imprimir(`[endereco:30] ${JSON.stringify(endereco)}`);
 
 	// um vetor pode ter seus valores removidos ou receber novos valores mesmo que definidos como constantes.
 	const frutas = ["uva", "maça"];
-	imprimir(`[frutas:33] [${frutas}]`);
+	imprimir(`[frutas:34] [${frutas}]`);
+
 	frutas.pop();
-	imprimir(`[frutas:35] [${frutas}]`);
-	frutas.push("abacaxi");
 	imprimir(`[frutas:37] [${frutas}]`);
+	
+	frutas.push("abacaxi");
+	imprimir(`[frutas:40] [${frutas}]`);
 }
 
 // variável global
@@ -45,14 +48,14 @@ var global = "um texto global";
 	var local = "um texto local";
 
 	// acessando variável global dentro de um bloco
-	imprimir(`[global:48] ${global}`);
+	imprimir(`[global:51] ${global}`);
 
 	// acessando local
-	imprimir(`[local:51] ${local}`);
+	imprimir(`[local:54] ${local}`);
 }
 
 // local é acessível em global quando declarado com var
-imprimir(`[local:55] ${local}`);
+imprimir(`[local:58] ${local}`);
 
 {
 	// bloco 1 - Pai
@@ -60,7 +63,7 @@ imprimir(`[local:55] ${local}`);
 
 	{
 		// acessível do bloco externo para o interno
-		imprimir(`[local_let:63] ${local_let}`);
+		imprimir(`[local_let:66] ${local_let}`);
 
 		// bloco 2 - Filho
 		// a variável global declarada com var é acessível dentro de qualquer bloco
@@ -74,8 +77,8 @@ imprimir(`[local:55] ${local}`);
 	}
 	
 	// acessando variável global
-	imprimir(`[global:77] ${global}`);
-	imprimir(`[local_let:78] ${local_let}`);
+	imprimir(`[global:80] ${global}`);
+	imprimir(`[local_let:81] ${local_let}`);
 
 	// variável declarada com let em um bloco filho não é acessível em um bloco pai
 	// imprimir(`[local_let_2] ${local_let_2}`); // Erro
@@ -97,7 +100,7 @@ imprimir(`[local:55] ${local}`);
 	let ultima_let = "let definida no final do arquivo";
 	const ultima_const = "const definida no final do arquivo";
 
-	imprimir(`[ultima_var:100] ${ultima_var}`);
-	imprimir(`[ultima_let:101] ${ultima_let}`);
-	imprimir(`[ultima_const:102] ${ultima_const}`);
+	imprimir(`[ultima_var:103] ${ultima_var}`);
+	imprimir(`[ultima_let:104] ${ultima_let}`);
+	imprimir(`[ultima_const:105] ${ultima_const}`);
 }

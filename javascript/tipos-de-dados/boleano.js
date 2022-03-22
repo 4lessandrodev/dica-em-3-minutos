@@ -16,6 +16,11 @@ var boleano = Boolean(0);
 imprimir(boleano);// false
 imprimir(typeof boleano);// boolean
 
+// qualquer valor numérico diferente de 0 é verdadeiro
+var boleano = Boolean(5);
+imprimir(boleano); // true
+imprimir(typeof boleano); // boolean
+
 var boleano = Boolean('true');
 imprimir(boleano);// true
 imprimir(typeof boleano);// boolean
