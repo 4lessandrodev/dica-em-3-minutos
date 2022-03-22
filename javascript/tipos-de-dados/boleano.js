@@ -67,6 +67,7 @@ limpar();
 var boleano = Boolean(null);
 imprimir(boleano);// false
 imprimir(typeof boleano);// boolean
+
 limpar();
 var boleano = Boolean(undefined);
 imprimir(boleano);// false
