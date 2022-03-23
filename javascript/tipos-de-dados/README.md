@@ -2,10 +2,11 @@
 
 ## Tipos de dados em javascript
 
-- Boolean
-- null
-- undefined
-- Number
-- String
-- Symbol
-- Object
+- [x] Boolean
+- [x] null
+- [x] undefined
+- [x] Number
+- [ ] String
+- [ ] Symbol
+- [ ] Object
+- [ ] Array

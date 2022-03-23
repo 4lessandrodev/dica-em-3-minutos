@@ -3,9 +3,9 @@
 ## Variáveis em javascript
 Existem três tipos de declarações em JavaScript.
 
-- var
-- let
-- const
+- [x] var
+- [x] let
+- [x] const
 
 |              |      var       |      const     |      let       |
 |--------------|:--------------:|---------------:|---------------:|
