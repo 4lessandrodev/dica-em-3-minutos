@@ -10,3 +10,4 @@
 - [ ] Symbol
 - [ ] Object
 - [ ] Array
+- [ ] Date
