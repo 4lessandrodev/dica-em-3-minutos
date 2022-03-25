@@ -8,6 +8,16 @@ imprimir(numero); // 200
 limpar();
 var numero = 20.88;
 imprimir(numero); // 20.88
+imprimir(typeof numero); // number
+
+limpar();
+var numero = Number('122.30');
+imprimir(numero); // 122.3
+imprimir(typeof numero); // number
+
+limpar();
+var numero = Number(42.01);
+imprimir(numero); // 42.01
 
 limpar();
 var numero = Number.MAX_SAFE_INTEGER;
