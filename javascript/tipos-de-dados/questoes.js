@@ -32,10 +32,14 @@ limpar();
 	ehIgual = typeof {} === typeof null;
 
 	imprimir(ehIgual);
+
+	var soma = null + 42;
+
+	imprimir(soma);
 }
 
 // O que será exibido no console?
 // Marque sua resposta
-// A: [] true, true, true
-// B: [] false, true, false
-// C: [] true, false, true
+// A: [] true, true, true, null
+// B: [] false, true, false, NaN
+// C: [] true, false, true, 42
