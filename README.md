@@ -1,7 +1,7 @@
 # DICAS EM 3 MINUTOS
 Conteúdo programático para nova série do youtube
 
-<a href="https://www.youtube.com/c/ALESSANDROLMENEZES/videos"><img src="./readme/logo-youtube.webp" width="100%" alt="logo" /></a>
+<a href="https://www.youtube.com/playlist?list=PLUxrX6EvA-2Z1LIPB8gSYyVpC99BwlcO4"><img src="./readme/logo-youtube.webp" width="100%" alt="logo" /></a>
 
 ## Javascript & EcmaScript
  - [x] Definição de variáveis

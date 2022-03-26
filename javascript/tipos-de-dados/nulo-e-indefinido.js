@@ -6,7 +6,8 @@ import { imprimir, limpar } from '../modulo/index.js';
  Os primeiros 3 bits representavam a tag de tipo de dado seguido pelos
  bits que representavam o valor.
 
- Para todos os objetos foi 000 como os bits de tag de tipo. null foi considerado um valor especial em JavaScript desde sua primeira versão. 
+ Para todos os objetos foi 000 como os bits de tag de tipo. 
+ null foi considerado um valor especial em JavaScript desde sua primeira versão. 
  null era uma representação do ponteiro nulo. 
  No entanto, não havia ponteiros em JavaScript como C. 
  
